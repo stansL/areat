@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { UserConsumer } from "./userContext";
 
-class ComponentF extends Component {
+class ComponentF extends PureComponent {
   render() {
     return (
       <UserConsumer>

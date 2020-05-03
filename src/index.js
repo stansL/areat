@@ -7,6 +7,7 @@ import "./index.css";
 // import MyApp from "./MyApp";
 // import HOC from "./components/HOC";
 import Contexts from "./components/Contexts";
+
 ReactDOM.render(
   <React.StrictMode>
     <Contexts />
