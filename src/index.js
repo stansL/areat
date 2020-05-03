@@ -5,10 +5,11 @@ import "./index.css";
 // import CodeSplitting from './components/CodeSplitting';
 // import ForwardingRefs from "./components/ForwardingRefs";
 // import MyApp from "./MyApp";
-import HOC from "./components/HOC";
+// import HOC from "./components/HOC";
+import Contexts from "./components/Contexts";
 ReactDOM.render(
   <React.StrictMode>
-    <HOC />
+    <Contexts />
   </React.StrictMode>,
   document.getElementById("root")
 );
