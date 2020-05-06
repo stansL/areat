@@ -15,6 +15,10 @@ class Contexts extends PureComponent {
     return { ...colormap, right: "blue" };
   }
 
+  // updateColorMap(colormap) {
+  //   return Object.assign({}, colormap, {right: 'blue'});
+  // }
+
   render() {
     console.log("Double ");
     var colormap = { right: "red", left: "Green" };
