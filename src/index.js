@@ -7,7 +7,8 @@ import "./index.css";
 // import MyApp from "./MyApp";
 // import HOC from "./components/HOC";
 // import Portals from "./components/portals/Portals";
-import Contexts from "./components/Contexts";
+// import Contexts from "./components/Contexts";
+import RenderProps from "./components/renderprops/RenderProps";
 
 const callBack = (
   id, // the "id" prop of the Profiler tree that has just committed
@@ -26,7 +27,7 @@ const callBack = (
 ReactDOM.render(
   <React.StrictMode>
     <Profiler id="Contexts" onRender={callBack}>
-      <Contexts />
+      <RenderProps />
     </Profiler>
   </React.StrictMode>,
   document.getElementById("root")
