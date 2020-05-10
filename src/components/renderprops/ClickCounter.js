@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
 
 class ClickCounter extends Component {
 
@@ -10,4 +12,10 @@ class ClickCounter extends Component {
     }
 }
 
+ClickCounter.propTypes = {
+    count: PropTypes.number.isRequired,
+    handleEvent: PropTypes.func.isRequired
+}
+
 export default ClickCounter
+

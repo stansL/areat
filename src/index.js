@@ -1,4 +1,4 @@
-import React, { Profiler } from "react";
+import React, { Profiler, StrictMode } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 // import App from './App';
@@ -20,15 +20,15 @@ const callBack = (
   interactions // the Set of interactions belonging to this update
 ) => {
 
-  console.log(id,phase,actualDuration,baseDuration,startTime,commitTime,interactions);
+  console.log(id,phase,actualDuration);
   
 };
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <Profiler id="Contexts" onRender={callBack}>
       <RenderProps />
     </Profiler>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById("root")
 );
