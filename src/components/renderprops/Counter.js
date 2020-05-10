@@ -1,3 +1,4 @@
+// @flow
 import React, { Component } from 'react'
 
 class Counter extends Component {
@@ -19,9 +20,10 @@ class Counter extends Component {
 
     }
     render() {
+        const { count } = this.state;
         return (
             <>
-                {this.props.render(this.state.count, this.handleEvent)}
+                {this.props.render(count, this.handleEvent)}
             </>
         )
     }
