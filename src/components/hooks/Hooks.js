@@ -11,8 +11,8 @@ function Hooks() {
     //Similar to componentDidMount and componentDidUpdate
     useEffect(() => {
         document.title = `You clicked ${count} times`;
-        
-    })
+
+    }, [count]);
     return (
         <div>
             <h1>Hooks things here</h1>
@@ -23,3 +23,38 @@ function Hooks() {
 }
 
 export default Hooks
+
+// export class Hooks extends Component {
+
+//     constructor(props) {
+//         super(props)
+
+//         this.state = {
+//             count: 0
+//         }
+//     }
+
+//     setCount = () => {
+//         this.setState(prevState => {
+//             return {
+//                 count: prevState.count + 1
+//             }
+//         })
+//     }
+
+//     componentDidUpdate(){
+//         document.title = `You clicked ${this.state.count} times`;
+
+//     }
+
+//     render() {
+//         return (
+//             <div>
+//                 <h1>Hooks things here</h1>
+//                 <p>You clicked {this.state.count} times </p>
+//                 <button onClick={this.setCount}>Click Me</button>
+//             </div>
+//         )
+//     }
+// }
+

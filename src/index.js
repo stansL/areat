@@ -11,6 +11,7 @@ import "./index.css";
 // import RenderProps from "./components/renderprops/RenderProps";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
 import Hooks from "./components/hooks/Hooks";
+import EffectClass from "./components/hooks/EffectClass";
 
 const callBack = (
   id, // the "id" prop of the Profiler tree that has just committed
