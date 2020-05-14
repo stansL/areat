@@ -5,7 +5,7 @@ function Hooks() {
     const [count, setCount] = useState(0);
     // Declare multiple state variables
     const [age, setAge] = useState(32);
-    const [fruit, setFruid] = useState('banana');
+    const [fruit, setFruit] = useState('banana');
     const [todos, setTodos] = useState([{ text: 'Learn React Hooks' }]);
 
     //Similar to componentDidMount and componentDidUpdate

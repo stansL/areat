@@ -18,7 +18,7 @@ function EffectFunctionWithCleanup() {
         // return () => {
         //     ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
         // };
-    });
+    },[count]);
 
     if (isOnline === null) {
         return 'Loading...';
