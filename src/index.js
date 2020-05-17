@@ -10,8 +10,13 @@ import "./index.css";
 // import Contexts from "./components/Contexts";
 // import RenderProps from "./components/renderprops/RenderProps";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
-import Hooks from "./components/hooks/Hooks";
-import EffectClass from "./components/hooks/EffectClass";
+// import Hooks from "./components/hooks/Hooks";
+// import EffectClass from "./components/hooks/EffectClass";
+import ClassCounter from "./components/hooksv2/ClassCounter";
+import HooksArray from "./components/hooksv2/HooksArray";
+// import HookCounter from "./components/hooksv2/HookCounter";
+// import HookCunterTwo from "./components/hooksv2/HookCunterTwo";
+// import HookObject from "./components/hooksv2/HookObject";
 
 const callBack = (
   id, // the "id" prop of the Profiler tree that has just committed
@@ -31,7 +36,11 @@ ReactDOM.render(
   <StrictMode>
     <Profiler id="Contexts" onRender={callBack}>
       {/* <NameForm /> */}
-      <Hooks />
+      <ClassCounter />
+      {/* <HookCounter /> */}
+      {/* <HookCunterTwo /> */}
+      {/* <HookObject /> */}
+      <HooksArray />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
