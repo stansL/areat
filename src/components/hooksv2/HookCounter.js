@@ -17,6 +17,8 @@ function HookCounter() {
     }, [count]);
 
     const logMousePosition = (e) => {
+        console.log("Mouse Event");
+
         setX(e.clientX);
         setY(e.clientY);
     }
@@ -24,6 +26,11 @@ function HookCounter() {
     useEffect(() => {
         console.log("Use Effect called");
         window.addEventListener('mousemove', logMousePosition);
+        return () => {
+            console.log("Component unmounting");
+            
+            window.removeEventListener('mousemove', logMousePosition);
+        }
     }, []);
 
 

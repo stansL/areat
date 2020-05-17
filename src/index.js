@@ -14,7 +14,8 @@ import "./index.css";
 // import EffectClass from "./components/hooks/EffectClass";
 // import ClassCounter from "./components/hooksv2/ClassCounter";
 // import HooksArray from "./components/hooksv2/HooksArray";
-import HookCounter from "./components/hooksv2/HookCounter";
+// import HookCounter from "./components/hooksv2/HookCounter";
+import MouseContainer from "./components/hooksv2/MouseContainer";
 // import HookCunterTwo from "./components/hooksv2/HookCunterTwo";
 // import HookObject from "./components/hooksv2/HookObject";
 
@@ -37,10 +38,11 @@ ReactDOM.render(
     <Profiler id="Contexts" onRender={callBack}>
       {/* <NameForm /> */}
       {/* <ClassCounter /> */}
-      <HookCounter />
+      {/* <HookCounter /> */}
       {/* <HookCunterTwo /> */}
       {/* <HookObject /> */}
       {/* <HooksArray /> */}
+      <MouseContainer />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
