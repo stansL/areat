@@ -12,9 +12,9 @@ import "./index.css";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
 // import Hooks from "./components/hooks/Hooks";
 // import EffectClass from "./components/hooks/EffectClass";
-import ClassCounter from "./components/hooksv2/ClassCounter";
-import HooksArray from "./components/hooksv2/HooksArray";
-// import HookCounter from "./components/hooksv2/HookCounter";
+// import ClassCounter from "./components/hooksv2/ClassCounter";
+// import HooksArray from "./components/hooksv2/HooksArray";
+import HookCounter from "./components/hooksv2/HookCounter";
 // import HookCunterTwo from "./components/hooksv2/HookCunterTwo";
 // import HookObject from "./components/hooksv2/HookObject";
 
@@ -36,11 +36,11 @@ ReactDOM.render(
   <StrictMode>
     <Profiler id="Contexts" onRender={callBack}>
       {/* <NameForm /> */}
-      <ClassCounter />
-      {/* <HookCounter /> */}
+      {/* <ClassCounter /> */}
+      <HookCounter />
       {/* <HookCunterTwo /> */}
       {/* <HookObject /> */}
-      <HooksArray />
+      {/* <HooksArray /> */}
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
