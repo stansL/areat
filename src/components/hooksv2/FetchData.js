@@ -4,12 +4,17 @@ import axios from 'axios';
 function FetchData() {
 
     const [id, setId] = useState(1);
+    const [fetchId, setFetchId] = useState(1);
 
 
     const [post, setPost] = useState({});
+    const handleClick = () => {
+        console.log("safdadsf");
+        setFetchId(id);
+    }
 
     useEffect(() => {
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+        axios.get(`https://jsonplaceholder.typicode.com/posts/${fetchId}`)
             .then(res => {
                 console.log(res.data)
                 setPost(res.data)
@@ -18,18 +23,19 @@ function FetchData() {
         // return () => {
         //     cleanup
         // }
-    }, [id])
+    }, [fetchId])
     // });
     return (
         <div>
             <input type="number" value={id} onChange={e => setId(e.target.value)} /> <br />
+            <button type="button" onClick={handleClick}>Fetch Post</button>
             {/* <ul>
                 {posts.map(post => (
                     <li key={post.id}> {post.title}</li>
                 ))}
             </ul> */}
 
-            {post.title}
+            <p>{post.title}</p>
 
         </div>
     )
