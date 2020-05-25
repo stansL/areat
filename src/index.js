@@ -15,7 +15,8 @@ import "./index.css";
 // import ClassCounter from "./components/hooksv2/ClassCounter";
 // import HooksArray from "./components/hooksv2/HooksArray";
 // import HookCounter from "./components/hooksv2/HookCounter";
-import MouseContainer from "./components/hooksv2/MouseContainer";
+// import MouseContainer from "./components/hooksv2/MouseContainer";
+import IntervalHookCounter from "./components/hooksv2/IntervalHookCounter";
 // import HookCunterTwo from "./components/hooksv2/HookCunterTwo";
 // import HookObject from "./components/hooksv2/HookObject";
 
@@ -42,7 +43,8 @@ ReactDOM.render(
       {/* <HookCunterTwo /> */}
       {/* <HookObject /> */}
       {/* <HooksArray /> */}
-      <MouseContainer />
+      {/* <MouseContainer /> */}
+      <IntervalHookCounter />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
