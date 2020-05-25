@@ -7,7 +7,7 @@ import "./index.css";
 // import MyApp from "./MyApp";
 // import HOC from "./components/HOC";
 // import Portals from "./components/portals/Portals";
-// import Contexts from "./components/Contexts";
+import Contexts from "./components/Contexts";
 // import RenderProps from "./components/renderprops/RenderProps";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
 // import Hooks from "./components/hooks/Hooks";
@@ -16,8 +16,8 @@ import "./index.css";
 // import HooksArray from "./components/hooksv2/HooksArray";
 // import HookCounter from "./components/hooksv2/HookCounter";
 // import MouseContainer from "./components/hooksv2/MouseContainer";
-import IntervalHookCounter from "./components/hooksv2/IntervalHookCounter";
-import FetchData from "./components/hooksv2/FetchData";
+// import IntervalHookCounter from "./components/hooksv2/IntervalHookCounter";
+// import FetchData from "./components/hooksv2/FetchData";
 // import HookCunterTwo from "./components/hooksv2/HookCunterTwo";
 // import HookObject from "./components/hooksv2/HookObject";
 
@@ -46,7 +46,8 @@ ReactDOM.render(
       {/* <HooksArray /> */}
       {/* <MouseContainer /> */}
       {/* <IntervalHookCounter /> */}
-      <FetchData />
+      {/* <FetchData /> */}
+      <Contexts />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")

@@ -1,12 +1,18 @@
 import React, { PureComponent } from "react";
-import { UserConsumer } from "./userContext";
+import { UserConsumer,ChannelContext } from "./userContext";
 
 class ComponentF extends PureComponent {
   render() {
     return (
       <UserConsumer>
         {(username) => {
-          return <div>Component F: {username}</div>;
+          return (
+            <ChannelContext.Consumer>
+              {channel => {
+                return <div>Component F: {username}, from {channel}</div>;
+              }}
+            </ChannelContext.Consumer>
+          )
         }}
       </UserConsumer>
     );

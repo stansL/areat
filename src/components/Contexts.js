@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import ComponentA from "./contexts/ComponentA";
 import ComponentB from "./contexts/ComponentB";
 import ComponentC from "./contexts/ComponentC";
-import { UserProvider } from "./contexts/userContext";
+import { UserProvider, ChannelContext } from "./contexts/userContext";
 // Provides a way to pass data through to the component tree without having to pass props down manually at every level
 
 // 1. Create the Context
@@ -29,10 +29,12 @@ class Contexts extends PureComponent {
 
     return (
       <div>
-        <UserProvider value="mstans">
-          <ComponentA />
-          <ComponentB />
-          <ComponentC />
+        <UserProvider value="edited name">
+          <ChannelContext.Provider value = "React Contexts Tutorial">
+            <ComponentA />
+            <ComponentB />
+            <ComponentC />
+          </ChannelContext.Provider>
         </UserProvider>
       </div>
     );

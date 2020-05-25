@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import { UserConsumer } from './userContext'
 
 class ComponentA extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <UserConsumer>
+                {(username) => <div> Component A: {username}</div>}
+            </UserConsumer>
         )
     }
 }
