@@ -9,6 +9,7 @@ import "./index.css";
 // import Portals from "./components/portals/Portals";
 // import Contexts from "./components/Contexts";
 import ReduceCounter from "./components/reducer/ReduceCounter";
+import MultipleReduceCounter from "./components/reducer/MultipleReduceCounter";
 // import RenderProps from "./components/renderprops/RenderProps";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
 // import Hooks from "./components/hooks/Hooks";
@@ -49,7 +50,8 @@ ReactDOM.render(
       {/* <IntervalHookCounter /> */}
       {/* <FetchData /> */}
       {/* <Contexts /> */},
-      <ReduceCounter />
+      {/* <ReduceCounter /> */}
+      <MultipleReduceCounter />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
