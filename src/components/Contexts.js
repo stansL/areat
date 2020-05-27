@@ -29,7 +29,7 @@ class Contexts extends PureComponent {
 
     return (
       <div>
-        <UserProvider value="edited name">
+        <UserProvider value="Stanslaus">
           <ChannelContext.Provider value = "React Contexts Tutorial">
             <ComponentA />
             <ComponentB />
