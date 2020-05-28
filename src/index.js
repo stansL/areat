@@ -8,8 +8,9 @@ import "./index.css";
 // import HOC from "./components/HOC";
 // import Portals from "./components/portals/Portals";
 // import Contexts from "./components/Contexts";
-import ReduceCounter from "./components/reducer/ReduceCounter";
-import MultipleReduceCounter from "./components/reducer/MultipleReduceCounter";
+// import ReduceCounter from "./components/reducer/ReduceCounter";
+// import MultipleReduceCounter from "./components/reducer/MultipleReduceCounter";
+import ContextReducer from "./components/advanced/ContextReducer";
 // import RenderProps from "./components/renderprops/RenderProps";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
 // import Hooks from "./components/hooks/Hooks";
@@ -51,7 +52,8 @@ ReactDOM.render(
       {/* <FetchData /> */}
       {/* <Contexts /> */},
       {/* <ReduceCounter /> */}
-      <MultipleReduceCounter />
+      {/* <MultipleReduceCounter /> */}
+      <ContextReducer />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
