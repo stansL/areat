@@ -5,18 +5,14 @@ function FetchData() {
 
     const [id, setId] = useState(1);
     const [fetchId, setFetchId] = useState(1);
-
-
     const [post, setPost] = useState({});
     const handleClick = () => {
-        console.log("safdadsf");
         setFetchId(id);
     }
 
     useEffect(() => {
         axios.get(`https://jsonplaceholder.typicode.com/posts/${fetchId}`)
             .then(res => {
-                console.log(res.data)
                 setPost(res.data)
             })
             .catch(err => console.log(err))

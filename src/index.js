@@ -10,7 +10,9 @@ import "./index.css";
 // import Contexts from "./components/Contexts";
 // import ReduceCounter from "./components/reducer/ReduceCounter";
 // import MultipleReduceCounter from "./components/reducer/MultipleReduceCounter";
-import ContextReducer from "./components/advanced/ContextReducer";
+// import ContextReducer from "./components/advanced/ContextReducer";
+// import EffectFetchData from "./components/hooksv2/EffectFetchData";
+import ReducerFetchData from "./components/hooksv2/ReducerFetchData";
 // import RenderProps from "./components/renderprops/RenderProps";
 // import NameForm from "./components/uncontrolledcomponents/NameForm";
 // import Hooks from "./components/hooks/Hooks";
@@ -50,10 +52,12 @@ ReactDOM.render(
       {/* <MouseContainer /> */}
       {/* <IntervalHookCounter /> */}
       {/* <FetchData /> */}
-      {/* <Contexts /> */},
+      {/* <Contexts /> */}
       {/* <ReduceCounter /> */}
       {/* <MultipleReduceCounter /> */}
-      <ContextReducer />
+      {/* <ContextReducer /> */}
+      {/* <EffectFetchData /> */}
+      <ReducerFetchData />
     </Profiler>
   </StrictMode>,
   document.getElementById("root")
